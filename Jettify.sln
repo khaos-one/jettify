@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify", "src\Jettify\Jettify.xproj", "{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify.Extensions", "src\Jettify.Extensions\Jettify.Extensions.xproj", "{FF2AE8E4-8E92-4095-90AB-27DBF6087817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +18,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2AE8E4-8E92-4095-90AB-27DBF6087817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2AE8E4-8E92-4095-90AB-27DBF6087817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2AE8E4-8E92-4095-90AB-27DBF6087817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2AE8E4-8E92-4095-90AB-27DBF6087817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1CAE032A-03EB-44F4-8D0F-0D29B8DFB48B} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
+		{FF2AE8E4-8E92-4095-90AB-27DBF6087817} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 	EndGlobalSection
 EndGlobal
