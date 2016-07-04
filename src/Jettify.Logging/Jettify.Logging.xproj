@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>1cae032a-03eb-44f4-8d0f-0d29b8dfb48b</ProjectGuid>
-    <RootNamespace>Jettify</RootNamespace>
+    <ProjectGuid>b1316684-6a9b-4c88-aa94-f5a380f9f969</ProjectGuid>
+    <RootNamespace>Jettify.Logging</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
