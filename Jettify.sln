@@ -16,6 +16,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify.Serve", "src\Jettif
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify.Logging", "src\Jettify.Logging\Jettify.Logging.xproj", "{B1316684-6A9B-4C88-AA94-F5A380F9F969}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify.Evt", "src\Jettify.Evt\Jettify.Evt.xproj", "{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{B1316684-6A9B-4C88-AA94-F5A380F9F969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1316684-6A9B-4C88-AA94-F5A380F9F969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1316684-6A9B-4C88-AA94-F5A380F9F969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 		{FF2AE8E4-8E92-4095-90AB-27DBF6087817} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 		{FC31F626-8C23-43DF-9D93-B0BB96CFC326} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 		{B1316684-6A9B-4C88-AA94-F5A380F9F969} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
+		{473FF2C5-7E3B-4ADA-BC17-BC4AB7267B1D} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 	EndGlobalSection
 EndGlobal

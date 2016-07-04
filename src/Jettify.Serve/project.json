@@ -4,7 +4,9 @@
   "dependencies": {
     "Jettify.Extensions": "0.4.2-*",
     "Jettify.Logging": "1.0.0-*",
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "1.6.0",
+    "System.Threading.Thread": "4.0.0",
+    "System.Threading.ThreadPool": "4.0.10"
   },
 
   "frameworks": {
