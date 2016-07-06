@@ -25,7 +25,8 @@ namespace Jettify.Serve {
 
         #region Constructors
 
-        protected TcpThreadedServer(IPAddress ip, int port, bool keepAlive = false, bool dontLinger = true, int? sendTimeout = null, int? receiveTimeout = null, string serverName = "", int? bufferSize = null) {
+        protected TcpThreadedServer(IPAddress ip, int port, bool keepAlive = false, bool dontLinger = true,
+            int? sendTimeout = null, int? receiveTimeout = null, string serverName = "", int? bufferSize = null) {
             ClientSocketSendTimeout = sendTimeout;
             ClientSocketReceiveTimeout = receiveTimeout;
             ClientSocketBufferSize = bufferSize;
