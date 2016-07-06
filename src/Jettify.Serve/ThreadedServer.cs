@@ -27,8 +27,8 @@ namespace Jettify.Serve {
 
         protected abstract void OnStart();
         protected abstract void OnStop();
-        protected abstract object AcceptClient();
-        protected abstract void HandleClient(object obj);
+        protected abstract object AcceptConnection();
+        protected abstract void HandleConnection(object obj);
 
         #endregion
 
@@ -41,13 +41,13 @@ namespace Jettify.Serve {
                 }
 
                 try {
-                    var obj = AcceptClient();
+                    var obj = AcceptConnection();
 
                     if (obj == null) {
                         continue;
                     }
 
-                    ThreadPool.QueueUserWorkItem(HandleClient, obj);
+                    ThreadPool.QueueUserWorkItem(HandleConnection, obj);
                 }
                 catch (ObjectDisposedException) {
                     return;

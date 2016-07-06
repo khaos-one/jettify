@@ -24,5 +24,12 @@ namespace Jettify.Extensions {
         public static bool IsReallyConnected(this Socket s, int timeout = 100) {
             return !((s.Poll(timeout, SelectMode.SelectRead) && (s.Available == 0)) || !s.Connected);
         }
+
+        public static void GracefulDisconnect(this Socket s) {
+            if (IsReallyConnected(s)) {
+                s.Shutdown(SocketShutdown.Both);
+                s.Dispose();
+            }
+        }
     }
 }
