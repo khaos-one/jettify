@@ -64,20 +64,42 @@ namespace Jettify.Serve {
 
         public string ServerName { get; protected set; }
 
-        public void Dispose() {
-            throw new System.NotImplementedException();
-        }
-
         public void Start() {
-            throw new System.NotImplementedException();
+            if (Interlocked.CompareExchange(ref _started, 1, 0) != 0) {
+                throw new InvalidOperationException("Server already started.");
+            }
+
+            OnStart();
+
+            _listenerThread = new Thread(Listen) {IsBackground = true, Name = "Server Listener Thread"};
+            _listenerThread.Start();
+            _evt.Reset();
         }
 
         public void Stop() {
-            throw new System.NotImplementedException();
+            if (Interlocked.CompareExchange(ref _started, 0, 1) != 1) {
+                throw new InvalidOperationException("Server was not started.");
+            }
+
+            try {
+                _cts.Cancel();
+                OnStop();
+            }
+            catch (Exception e) {
+                Log.Entry(Priority.Warning, "Server stop exception: {0}", e);
+            }
+            finally {
+                _evt.Set();
+            }
         }
 
         public void WaitForJoin(int millisecondsTimeout = -1) {
-            throw new System.NotImplementedException();
+            _evt.Wait(millisecondsTimeout);
+        }
+
+        public void Dispose() {
+            Stop();
+            WaitForJoin();
         }
 
         #endregion
