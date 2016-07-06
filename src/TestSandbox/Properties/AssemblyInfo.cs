@@ -6,9 +6,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Egor 'khaos' Zelensky")]
-[assembly: AssemblyCopyright("Copyright (c) Egor 'khaos' Zelensky, 2016.")]
-[assembly: AssemblyProduct("Jettify.Serve")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("TestSandbox")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -17,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fc31f626-8c23-43df-9d93-b0bb96cfc326")]
+[assembly: Guid("327af2bd-f1a4-4229-b899-7d2acfe281ed")]

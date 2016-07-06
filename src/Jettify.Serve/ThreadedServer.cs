@@ -17,8 +17,6 @@ namespace Jettify.Serve {
         private int _started;
         private int _stopped;
 
-        private List<WaitHandle> _threadPoolHandles;
-
         protected bool IsCancellationRequested => _cts.IsCancellationRequested;
 
         #endregion

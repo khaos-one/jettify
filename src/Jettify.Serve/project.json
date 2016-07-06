@@ -1,9 +1,13 @@
 ﻿{
-  "version": "1.0.0-*",
+  "title": "Jettify.Serve",
+  "authors": [ "Egor 'khaos' Zelensky" ],
+  "copyright": "(c) Egor 'khaos' Zelensky, 2016.",
+  "description": "Efficient async/threaded TCP network server library.",
+  "version": "0.4.0-*",
 
   "dependencies": {
-    "Jettify.Extensions": "0.4.2-*",
-    "Jettify.Logging": "1.0.0-*",
+    "Jettify.Extensions": "0.4.3-*",
+    "Jettify.Logging": "0.4.0-*",
     "NETStandard.Library": "1.6.0",
     "System.Threading.Thread": "4.0.0",
     "System.Threading.ThreadPool": "4.0.10"
@@ -13,5 +17,13 @@
     "netstandard1.5": {
       "imports": "dnxcore50"
     }
+  },
+
+  "buildOptions": {
+    "optimize": true
+  },
+  "packOptions": {
+    "repository": { "url": "https://github.com/khaos-one/jettify" },
+    "summary": "Efficient async/threaded TCP network server library. Part of the Jettify pack."
   }
 }

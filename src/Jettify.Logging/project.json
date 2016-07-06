@@ -1,5 +1,9 @@
 {
-  "version": "1.0.0-*",
+  "title": "Jettify.Logging",
+  "authors": [ "Egor 'khaos' Zelensky" ],
+  "copyright": "(c) Egor 'khaos' Zelensky, 2016.",
+  "description": "A simple logging service library.",
+  "version": "0.4.0-*",
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
@@ -10,5 +14,13 @@
     "netstandard1.5": {
       "imports": "dnxcore50"
     }
+  },
+
+  "buildOptions": {
+    "optimize": true
+  },
+  "packOptions": {
+    "repository": { "url": "https://github.com/khaos-one/jettify" },
+    "summary": "A simple logging service library. Part of the Jettify pack."
   }
 }
