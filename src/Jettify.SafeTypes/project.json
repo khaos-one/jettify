@@ -2,6 +2,7 @@
   "title": "Jettify.SafeTypes",
   "version": "0.4.0-*",
   "description": "Safe types for hiding important data in memory. Part of the Jettify library.",
+  "copyright": "(c) Egor 'khaos' Zelensky, 2016",
   "projectUrl": "https://github.com/khaos-one/jettify",
 
   "dependencies": {
