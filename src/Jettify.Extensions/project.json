@@ -4,6 +4,8 @@
   "copyright": "(c) Egor 'khaos' Zelensky, 2016.",
   "description": "A commonly used type extensions library for everyday development. Part of the Jettify library.",
   "version": "0.4.3-*",
+  "projectUrl": "https://github.com/khaos-one/jettify",
+
   "dependencies": {
     "NETStandard.Library": "1.6.0"
   },

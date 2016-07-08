@@ -1,14 +1,13 @@
-{
-  "title": "Jettify.Logging",
-  "authors": [ "Egor 'khaos' Zelensky" ],
-  "copyright": "(c) Egor 'khaos' Zelensky, 2016.",
-  "description": "A simple logging service library.",
+﻿{
+  "title": "Jettify.SafeTypes",
   "version": "0.4.0-*",
+  "description": "Safe types for hiding important data in memory. Part of the Jettify library.",
   "projectUrl": "https://github.com/khaos-one/jettify",
 
   "dependencies": {
+    "Jettify.Crypto": "0.4.0-*",
     "NETStandard.Library": "1.6.0",
-    "System.Threading.Thread": "4.0.0"
+    "System.Runtime.Serialization.Primitives": "4.1.1"
   },
 
   "frameworks": {
@@ -22,6 +21,6 @@
   },
   "packOptions": {
     "repository": { "url": "https://github.com/khaos-one/jettify" },
-    "summary": "A simple logging service library. Part of the Jettify pack."
+    "summary": "Safe types for hiding important data in memory. Part of the Jettify library."
   }
 }

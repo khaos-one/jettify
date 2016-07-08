@@ -1,0 +1,24 @@
+﻿{
+  "title": "Jettify.Crypto",
+  "version": "0.4.0-*",
+  "description": "Cryptographic helpers library. Part of the Jettify pack.",
+  "projectUrl": "https://github.com/khaos-one/jettify",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    }
+  },
+
+  "buildOptions": {
+    "optimize": true
+  },
+  "packOptions": {
+    "repository": { "url": "https://github.com/khaos-one/jettify" },
+    "summary": "Cryptographic helpers library. Part of the Jettify pack."
+  }
+}

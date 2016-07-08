@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>327af2bd-f1a4-4229-b899-7d2acfe281ed</ProjectGuid>
-    <RootNamespace>TestSandbox</RootNamespace>
+    <ProjectGuid>d33d7f6c-1bc6-4189-8863-6c2af42c5491</ProjectGuid>
+    <RootNamespace>Jettify.SafeTypes</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
