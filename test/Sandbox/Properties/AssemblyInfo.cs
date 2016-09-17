@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Jettify.Evt")]
+[assembly: AssemblyProduct("Sandbox")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("473ff2c5-7e3b-4ada-bc17-bc4ab7267b1d")]
+[assembly: Guid("0d2638ad-8c34-4049-8088-5d0242b7b7aa")]
