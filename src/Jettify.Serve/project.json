@@ -3,7 +3,7 @@
   "authors": [ "Egor 'khaos' Zelensky" ],
   "copyright": "(c) Egor 'khaos' Zelensky, 2016.",
   "description": "Efficient async/threaded TCP network server library.",
-  "version": "0.4.0-*",
+  "version": "0.4.1-*",
   "projectUrl": "https://github.com/khaos-one/jettify",
 
   "dependencies": {

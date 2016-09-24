@@ -42,8 +42,23 @@ namespace Jettify.Serve {
             ServerName = serverName;
 
             ListenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, false);
-            ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, true);
+
+            try {
+                ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, false);
+            }
+            catch (SocketException) {
+                // Some of the options may not be supported everywhere yet.
+                Log.Entry(Priority.Warning, "Setting socket's keep alive option is not supported on this platform, ignoring.");
+            }
+
+            try {
+                ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, true);
+            }
+            catch (SocketException) {
+                // Unfortunately, setting lingering options causes this exception on Debian.
+                // Just ignoring it.
+                Log.Entry(Priority.Warning, "Setting socket's lingering options is not supported on this platform, ignoring.");
+            }
         }
 
         public AsyncTcpServer(int port, int? sendTimeout = null, int? receiveTimeout = null,

@@ -9,7 +9,7 @@
     "Jettify.Extensions": "0.4.3-*",
     "Jettify.Logging": "0.4.0-*",
     "Jettify.SafeTypes": "0.4.0-*",
-    "Jettify.Serve": "0.4.0-*",
+    "Jettify.Serve": "0.4.1-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.1"

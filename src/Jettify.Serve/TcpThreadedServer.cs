@@ -36,8 +36,22 @@ namespace Jettify.Serve {
             LocalEndPoint = new IPEndPoint(ip, port);
             ListenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, false);
-            ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, true);
+            try {
+                ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, false);
+            }
+            catch (SocketException) {
+                // Some of the socket's options may not be supported everywhere yet.
+                Log.Entry(Priority.Warning, "Setting socket's keep alive option is not supported on this platform, ignoring.");
+            }
+
+            try {
+                ListenerSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, true);
+            }
+            catch (SocketException) {
+                // Unfortunately, setting lingering options causes this exception on Debian.
+                // Just ignoring it.
+                Log.Entry(Priority.Warning, "Setting socket's lingering options is not supported on this platform, ignoring.");
+            }
         }
 
         protected TcpThreadedServer(int port)
@@ -92,8 +106,19 @@ namespace Jettify.Serve {
                     s.ReceiveBufferSize = s.SendBufferSize = ClientSocketBufferSize.Value;
                 }
 
-                s.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, KeepAlive);
-                s.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, DontLinger);
+                try {
+                    s.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, KeepAlive);
+                }
+                catch (SocketException) {
+                    Log.Entry(Priority.Warning, "Setting socket's keep alive options is not supported on this platform, ignoring.");
+                }
+
+                try {
+                    s.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.DontLinger, DontLinger);
+                }
+                catch (SocketException) {
+                    Log.Entry(Priority.Warning, "Setting socket's lingering options is not supported on this platform, ignoring.");
+                }
 
                 return s;
             }
