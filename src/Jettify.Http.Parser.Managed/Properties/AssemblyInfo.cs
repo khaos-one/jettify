@@ -6,7 +6,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Egor 'khaos' Zelensky")]
+[assembly: AssemblyCopyright("Egor 'khaos' Zelensky, 2016.")]
 [assembly: AssemblyProduct("Jettify.Http.Parser.Managed")]
 [assembly: AssemblyTrademark("")]
 
