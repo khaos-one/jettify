@@ -26,6 +26,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sandbox", "test\Sandbox\San
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jettify.Http.Parser.Native", "src\Jettify.Http.Parser.Native\Jettify.Http.Parser.Native.vcxproj", "{26F2AA53-7B3D-4168-9D9D-5976E2F87973}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jettify.Http.Parser.Managed", "src\Jettify.Http.Parser.Managed\Jettify.Http.Parser.Managed.xproj", "{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +120,18 @@ Global
 		{26F2AA53-7B3D-4168-9D9D-5976E2F87973}.Release|x64.Build.0 = Release|x64
 		{26F2AA53-7B3D-4168-9D9D-5976E2F87973}.Release|x86.ActiveCfg = Release|Win32
 		{26F2AA53-7B3D-4168-9D9D-5976E2F87973}.Release|x86.Build.0 = Release|Win32
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|x64.Build.0 = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|x64.ActiveCfg = Release|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|x64.Build.0 = Release|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,5 +144,6 @@ Global
 		{DD8FC637-90F3-42F1-8AE4-4811D17458C5} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 		{0D2638AD-8C34-4049-8088-5D0242B7B7AA} = {87976339-5A57-4954-8C41-CCEED29E2BA7}
 		{26F2AA53-7B3D-4168-9D9D-5976E2F87973} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
+		{DFC3AA99-71EE-448B-9B4D-CB6A88CFCB0A} = {181586EA-4B2E-4A58-91F7-A50515F1857D}
 	EndGlobalSection
 EndGlobal
